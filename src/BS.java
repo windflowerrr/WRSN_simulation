@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class BS {
-    static double rho = 16;   //覆盖阈值
+    static double rho = 31;   //覆盖阈值
 
     // 判断节点是否在六边形内
     public static boolean contains(Node point, Hexagon hexagon, int r) {

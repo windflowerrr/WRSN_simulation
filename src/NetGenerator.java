@@ -28,25 +28,26 @@ public class NetGenerator {
         reader.close();
         return nodes;
     }
-    /*public static List<Node> generateRandomNodes(int count, double maxR) {   // maxR为网络长度的一半(150)
 
-
-        Random random = new Random();
-
-        for (int i = 0; i < count; i++) {
-          /*  // 生成随机角度和半径
-            double theta = 2 * Math.PI * random.nextDouble(); // 随机角度
-            double radius = Math.sqrt(random.nextDouble()) * maxR; // 随机半径
-            // 计算x和y坐标
-            double x = radius * Math.cos(theta);
-            double y = radius * Math.sin(theta);
-            double x = random.nextDouble() * maxR;
-            double y = random.nextDouble() * maxR;
-            nodes.add(new Node(i + 1, x, y));           // 创建新节点并添加到列表
-        }
-
-        return nodes;
-    }*/
+//    public static List<Node> generateRandomNodes(int count, double maxR) {   // maxR为网络长度的一半(150)
+//
+//
+//        Random random = new Random();
+//
+//        for (int i = 0; i < count; i++) {
+//          /*  // 生成随机角度和半径
+//            double theta = 2 * Math.PI * random.nextDouble(); // 随机角度
+//            double radius = Math.sqrt(random.nextDouble()) * maxR; // 随机半径
+//            // 计算x和y坐标
+//            double x = radius * Math.cos(theta);
+//            double y = radius * Math.sin(theta); */
+//            double x = random.nextDouble() * maxR;
+//            double y = random.nextDouble() * maxR;
+//            nodes.add(new Node(i + 1, x, y));           // 创建新节点并添加到列表
+//        }
+//
+//        return nodes;
+//    }
 
     //计算每个正六边形中心坐标
     public static List<Hexagon> hexagons = new ArrayList<>();

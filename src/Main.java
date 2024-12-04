@@ -9,16 +9,17 @@ import java.util.Map;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        int count = 50;
+        int count = 100;
         int maxR = 100;
-        int r = 30;
-        int rho = 16;
+        int r = 30;  //正六边形边长
+        int rho = 31;
         double maxCluster = 30;   //允许的最大簇半径
        //NetGenerator.generateRandomNodes(count, maxR);
         List<Node> nodes = new ArrayList<>();
+        //nodes = NetGenerator.generateRandomNodes(count,maxR);
         try {
             // 文件路径
-            String filePath = "C:/data/NodeData.txt";
+            String filePath = "C:/data/NodeData1.0.txt";
             // 从文件生成节点
              nodes = NetGenerator.generateNodesFromFile(filePath);
 
@@ -32,7 +33,7 @@ public class Main {
         }
       System.out.println("节点坐标为：");
         for (Node node : nodes) {
-            System.out.printf("(%f,%f，序号：%d)\n",node.getX(),node.getY(),node.getId());
+            System.out.printf("%f,%f 序号为：%d\n",node.getX(),node.getY(),node.getId());
         }
         NetGenerator.HexagonStorage(r,maxR);
      for (Hexagon hexagon : NetGenerator.hexagons) {
